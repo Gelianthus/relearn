@@ -1,0 +1,26 @@
+model structure
+
+create separate models for likes | dislikes and comments for blog model
+
+/blogs directory is meant to learn how generateStaitcParams work
+
+blog = {
+    id,
+    title,
+    content,
+    categories,
+    published_date,
+    // count likes_dislikes by getting all "which_blog" === "id"
+    // check each if "like" | "dislike"
+}
+
+likes_dislikes = {
+    which_blog,
+    which_user,
+    what_rating,
+    // create new instance if "which_user" !exist
+    // otherwise update "what_rating" value
+
+    // check user rating 
+    // "like" | "unrated" | "dislike"
+}

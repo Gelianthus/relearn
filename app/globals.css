@@ -2,32 +2,102 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+span.google-icon-size-20 {
+  font-size: 20px;
+  font-variation-settings: 'OPSZ' 20;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+span.google-icon-size-24 {
+  font-size: 24px;
+  font-variation-settings: 'OPSZ' 24;
+}
+
+span.google-icon-size-32 {
+  font-size: 32px;
+  font-variation-settings: 'OPSZ' 32;
+}
+
+span.google-icon-size-40 {
+  font-size: 40px;
+  font-variation-settings: 'OPSZ' 40;
+}
+
+span.google-icon-size-48 {
+  font-size: 48px;
+  font-variation-settings: 'OPSZ' 48;
+}
+
+span.google-icon-wght-100 {
+  font-variation-settings: 'wght' 100;
+}
+
+span.google-icon-wght-200 {
+  font-variation-settings: 'wght' 200;
+}
+
+span.google-icon-wght-300 {
+  font-variation-settings: 'wght' 300;
+}
+
+span.google-icon-wght-400 {
+  font-variation-settings: 'wght' 400;
+}
+
+span.google-icon-wght-500 {
+  font-variation-settings: 'wght' 500;
+}
+
+span.google-icon-wght-600 {
+  font-variation-settings: 'wght' 600;
+}
+
+span.google-icon-wght-700 {
+  font-variation-settings: 'wght' 700;
+}
+
+span.google-icon-fill-1 {
+  font-variation-settings: "FILL" 1;
+}
+
+.loading-spinner-small {
+  width: 32px;
+  height: 32px;
+  border: 5px solid #FFF;
+  border-bottom-color: rgb(16 185 129);
+  border-radius: 50%;
+  display: block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.loading-spinner-medium {
+  width: 44px;
+  height: 44px;
+  border: 5px solid #FFF;
+  border-bottom-color: rgb(16 185 129);
+  border-radius: 50%;
+  display: block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.loading-spinner-big {
+  width: 60px;
+  height: 60px;
+  border: 5px solid #FFF;
+  border-bottom-color: rgb(16 185 129);
+  border-radius: 50%;
+  display: block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  100% {
+    transform: rotate(360deg);
   }
 }
